@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  airflow:
+    build: ./
+    image: tfx_airflow
+    ports:
+      - 8080:8080
+    volumes:
+      - ${MODEL_PATH}/iris:/app/models/iris
+
+  tensorflow_server:
+    image: tensorflow/serving
+    ports:
+      - 8501:8501
+    environment:
+      - MODEL_NAME=iris
+    volumes:
+      - ${MODEL_PATH}/iris:/models/iris:ro
+
+volumes:
+  iris:

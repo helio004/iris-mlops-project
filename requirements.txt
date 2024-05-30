@@ -1,0 +1,5 @@
+docker<5
+tensorflow==2.15.1
+tfx==1.15.0
+apache-airflow==2.9.1
+scikit-learn==1.5.0
