@@ -35,7 +35,7 @@ def transform_data(data, model):
 def predict(data):
     model = load_latest_model(MODEL_PATH)
 
-    transformed_data = transform_data(data)
+    transformed_data = transform_data(data, model)
 
     pred = np.array(model(transformed_data))
     predicted_class = np.argmax(pred, axis=-1)[0]

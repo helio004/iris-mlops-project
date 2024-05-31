@@ -11,4 +11,4 @@ prediction_router = APIRouter(
 @prediction_router.post(path='/predict')
 async def prediction(features: IrisFeatures):
     response = predict(features)
-    return {"prediction"}
+    return {"prediction": response}
