@@ -12,7 +12,6 @@ tfx_metadata
 data
 models
 .docker
-app
 
 # C extensions
 *.so

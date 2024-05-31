@@ -64,23 +64,8 @@ password: admin
 
 # Acessando o Modelo Treinado
 
-Após a conclusão do pipeline de treinamento, você pode acessar o modelo treinado na seguinte URL:
+Após a conclusão do pipeline de treinamento, você pode acessar o modelo treinado na seguinte URL: http://localhost:8000/docs
 
-```console
-foo@bar:~$ curl http://localhost:8501/v1/models/iris
-{
- "model_version_status": [
-  {
-   "version": "1717104603",
-   "state": "AVAILABLE",
-   "status": {
-    "error_code": "OK",
-    "error_message": ""
-   }
-  }
- ]
-}
-```
 
 # Destruindo os Contêineres
 

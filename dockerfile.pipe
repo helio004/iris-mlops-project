@@ -4,9 +4,9 @@ WORKDIR /app
 ENV AIRFLOW_HOME "/app"
 ENV AIRFLOW__CORE__LOAD_EXAMPLES 'false'
 
-COPY requirements.txt requirements.txt
+COPY requirements.pipeline.txt requirements.pipeline.txt
 RUN export SLUGIFY_USES_TEXT_UNIDECODE=yes && \
-    pip install -r requirements.txt
+    pip install -r requirements.pipeline.txt
 
 ENV PIPELINE_NAME "iris"
 ENV DAGS_DIR "${AIRFLOW_HOME}/dags"
