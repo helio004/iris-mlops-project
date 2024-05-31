@@ -28,7 +28,7 @@ cd iris-mlops-project
 Para executar o deploy do projeto, utilizer o comando:
 
 ```bash
-make deploy
+make up
 ```
 
 Este comando ira construir e iniciar os contêineres Docker definidos no `docker-compose.yml`
@@ -70,7 +70,7 @@ Após a conclusão do pipeline de treinamento, você pode acessar o modelo trein
 # Destruindo os Contêineres
 
 ```bash
-make destroy
+make down
 ```
 
 Este projeto é licenciado sob os termos da [Licença MIT](./LICENSE)
