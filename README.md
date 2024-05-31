@@ -19,8 +19,8 @@ Certifique-se de ter o Docker e o Docker Compose instalados na sua máquina. Se 
 Para clonar este repositório, execute o seguinte comando:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/helio004/iris-mlops-project.git
+cd iris-mlops-project
 ```
 
 # Executando o Deploy
@@ -56,7 +56,7 @@ password: admin
 
 # Iniciando o Pipeline de Treinamento
 
-1. No Airflow, encontre a DAG correspondente ao processo ETL.
+1. No Airflow, encontre a DAG correspondente ao processo Pipeline.
 2. Ative a DAG (ligue o botão ao lado do nome da DAG)
 3. Inicie a DAG manualmente clicando no botão de "Trigger DAG".
 

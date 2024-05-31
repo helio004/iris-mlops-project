@@ -1,7 +1,7 @@
 import os
 
 # Nome do pipeline
-PIPELINE_NAME = 'iris'
+PIPELINE_NAME = 'iris_pipeline'
 
 # Funções de treinamento e pré processamento
 PREPROCESSING_FN = 'pipeline.utils.preprocessing.preprocessing_fn'

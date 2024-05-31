@@ -37,17 +37,17 @@ def iris_etl(data_path: str, filename: str = 'iris.csv'):
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2023, 5, 30),
+    'start_date': datetime.now(),
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
 }
 
 with DAG(
-    'iris_etl_dag',
+    'iris_etl',
     default_args=default_args,
     description='A simple ETL DAG for the Iris dataset',
-    schedule_interval='@daily',
+    schedule_interval=None,
     catchup=False,
 ) as dag:
     
